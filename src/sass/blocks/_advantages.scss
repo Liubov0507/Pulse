@@ -1,0 +1,48 @@
+.advantages {
+    min-height: 470px;
+    padding: 71px 0 64px 0;
+    background:#F6F6F6;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-top: 70px;
+        color: #0D0D0D;
+    }
+    &__item {
+        width: 265px;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 40px;
+        }
+    }
+    &__descr {
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 0;
+        a {
+            color: #FF0000;
+            text-transform: uppercase;
+            font-family: 'Museo', sans-serif;            
+        }
+    }
+    &__icon {
+        &_animated {
+            animation: heartbeat 1.8s ease infinite;  // Краткая запись того же свойства animation
+            // animation-name: heartbeat;
+            // animation-duration: 1.8s;
+            // animation-timing-function: ease;
+            // animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        
+
+        
+        }
+    }
+
+}

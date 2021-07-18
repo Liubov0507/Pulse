@@ -1,0 +1,53 @@
+.carousel {
+    padding: 81px 0;
+    &__inner {
+        position: relative;
+        margin: 0 auto;
+    }
+    .slick-prev, .slick-next {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        left: -67px;
+        border: none;
+        background-color: transparent;
+        img {
+            width: 31px;
+            height: 50px;
+        }
+        &:focus { /*фокус нужен для обводки для людей с плохим зрением*/
+            outline: none;
+            box-shadow: 0 0 0 3px lightskyblue; 
+        }
+    }
+    .slick-next {
+        right: -67px;
+        left: auto;
+    }
+    .slick-slide img {
+        display: block;
+        margin: 0 auto;
+    }
+    .slick-dots {
+        margin: 0 auto;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+        list-style-type: none;
+        padding-left: 0;
+            button {
+                font-size: 0;
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                border: none;
+                background-color: rgb(204, 201, 201);
+            }
+        .slick-active button {
+            background: red;
+         } 
+    }
+}
+
+
